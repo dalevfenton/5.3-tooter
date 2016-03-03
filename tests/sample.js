@@ -49,8 +49,6 @@ describe('hello', function(){
 
     describe("showPosts", function(){
       it("should take a post array and list them", function(){
-        console.log(posts);
-        // view.showPosts(posts);
         expect($('.posts li').first().length).to.equal(1);
         expect($('.posts li h1').first().text()).to.equal("hey");
         expect($('.posts li p').first().text()).to.equal("there");

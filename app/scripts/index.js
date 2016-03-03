@@ -10,8 +10,6 @@ $(function(){
   });
   $('#create-post-submit').click(function(event, data){
     event.preventDefault();
-    console.log(event);
-    console.log(data);
     $(document).trigger('create:post', [{title: "Cool", body: "Cool"}]);
   });
   Post.fetch();
